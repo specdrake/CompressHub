@@ -26,14 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    huffman.cpp
+    huffman.cpp \
+    imageviewer.cpp
 
 HEADERS += \
         mainwindow.h \
-    huffman.h
+    huffman.h \
+    imageviewer.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    imageviewer.ui
 
 RESOURCES += \
     resources.qrc
