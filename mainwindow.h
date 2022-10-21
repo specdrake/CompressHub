@@ -48,6 +48,14 @@ private slots:
 
     void on_actionCompress_triggered();
 
+    void on_actionDecompress_triggered();
+
+    void on_actionMail_triggered();
+
+    void on_actionCompress_Image_triggered();
+
+    void on_actionImage_Mode_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";

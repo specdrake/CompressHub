@@ -69,9 +69,9 @@
    <widget class="QMenu" name="menuCompress">
     <property name="geometry">
      <rect>
-      <x>482</x>
+      <x>468</x>
       <y>131</y>
-      <width>159</width>
+      <width>179</width>
       <height>100</height>
      </rect>
     </property>
@@ -81,10 +81,25 @@
     <addaction name="actionCompress"/>
     <addaction name="actionDecompress"/>
    </widget>
+   <widget class="QMenu" name="menuShare">
+    <property name="title">
+     <string>Share</string>
+    </property>
+    <addaction name="actionMail"/>
+   </widget>
+   <widget class="QMenu" name="menuImage">
+    <property name="title">
+     <string>Image</string>
+    </property>
+    <addaction name="actionImage_Mode"/>
+    <addaction name="actionCompress_Image"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuAbout"/>
    <addaction name="menuCompress"/>
+   <addaction name="menuImage"/>
+   <addaction name="menuShare"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -113,6 +128,9 @@
    <property name="text">
     <string>New</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="actionOpen">
    <property name="icon">
@@ -121,6 +139,9 @@
    </property>
    <property name="text">
     <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionSave">
@@ -131,6 +152,9 @@
    <property name="text">
     <string> Save As</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actionPrint">
    <property name="icon">
@@ -139,6 +163,9 @@
    </property>
    <property name="text">
     <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
    </property>
   </action>
   <action name="actionExit">
@@ -149,6 +176,9 @@
    <property name="text">
     <string>Exit</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
   </action>
   <action name="actionCopy">
    <property name="icon">
@@ -157,6 +187,9 @@
    </property>
    <property name="text">
     <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
   <action name="actionPaste">
@@ -167,6 +200,9 @@
    <property name="text">
     <string>Paste</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
   </action>
   <action name="actionCut">
    <property name="icon">
@@ -176,15 +212,24 @@
    <property name="text">
     <string>Cut</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
   </action>
   <action name="actionUndo">
    <property name="text">
     <string>Undo</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionRedo">
    <property name="text">
     <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
   <action name="actionAuthors">
@@ -199,12 +244,35 @@
   </action>
   <action name="actionCompress">
    <property name="text">
-    <string>Compress</string>
+    <string>Compress Text</string>
    </property>
   </action>
   <action name="actionDecompress">
    <property name="text">
-    <string>Decompress</string>
+    <string>Decompress Text</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionCompress_Image">
+   <property name="text">
+    <string>Compress Image</string>
+   </property>
+  </action>
+  <action name="actionImage_Mode">
+   <property name="text">
+    <string>Image Mode</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionCompress_Image_2">
+   <property name="text">
+    <string>Compress Image</string>
    </property>
   </action>
  </widget>
